@@ -129,10 +129,11 @@ nav a{
 }
 
 .banner-container h1{
-    font-size:4vw;
+    font-size:3.2vw;
     font-family: arial;
     color:#fff;
     font-weight: 500;
+    line-height: 4vw;
 }
 
 .banner-container h1 span{
@@ -142,7 +143,7 @@ nav a{
 }
 
 .banner-container button{
-    font-size:1.2vw;
+    font-size:1.1vw;
     font-family: arial;
     color:#fff;
     padding:0.7vw 2vw;
@@ -179,7 +180,7 @@ nav a{
     width:40vw;
     line-height: 2vw;
     text-align:justify;
-    font-size:1.1vw;
+    font-size:1.2vw;
 }
 
 .sobre-container2{
