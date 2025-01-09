@@ -6,6 +6,7 @@
     --header-color:#0B0B0B;
 
     --standard-color:#A914FA;
+    --standard-secundary-color:#7405b1;
 
     --text-color:#fff;
 
@@ -57,6 +58,7 @@ header{
     gap:6vw;
     align-items: center;
     box-shadow: 0px 4px 8px #000;
+    transition: 0.5s;
 }
 
 p{
@@ -390,11 +392,109 @@ nav a{
     filter: var(--arrow-carousel);
 }
 
+/* CONTATO */
+
+#contato{
+    margin-top:8vw;
+    padding:0vw 18vw;
+    position:relative;
+    z-index:2;
+}
+
+.contato-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:10vw;
+}
+
+.contato-img{
+    width:16vw;
+}
+
+#contato .contato-container form{
+    width:40vw;
+    display:flex;
+    flex-direction: column;
+    gap:2vw;
+}
+
+#contato .contato-container form .form-group label{
+    font-family:arial;
+    font-size:1vw;
+    font-weight:600;
+    color:var(--text-color);
+}
+
+#contato .contato-container form .form-group input,
+#contato .contato-container form .form-group textarea{
+    color:var(--text-color);
+    font-size:1vw;
+    font-family:arial;
+    background-color: transparent;
+    border-bottom:3px solid var(--standard-color);
+    border-top:none;
+    border-left:none;
+    border-right: none;
+    border-radius:0;
+}
+
+#contato .contato-container form button{
+    width:100%;
+    background-color:var(--standard-color);
+    color:#fff;
+    border:none;
+    padding:0.7vw 0;
+    font-family:arial;
+    font-size:1.1vw;
+}
+#contato .contato-container form button:hover{
+    background-color: var(--standard-secundary-color);
+}
+
+/* FOOTER */
+footer{
+    margin-top:8vw !important;
+    width:100%;
+    height:10vw;
+    background-color: var(--third-bg-color);
+    padding:0vw 18vw;
+    position:relative;
+    z-index:2;
+}
+
+footer img{
+    width:8vw;
+}
+
+footer h3{
+    color:var(--text-color);
+    font-size:1.3vw;
+    font-family:arial;
+    font-weight: 700;
+}
+
+footer span, footer i{
+    color:var(--text-color);
+    font-size:1.1vw;
+}
+
+.copyright{
+    background-color: var(--secundary-bg-color);
+    color:var(--text-color);
+    font-size:1vw;
+    font-family: arial;
+    font-weight:600;
+    padding:0.5vw;
+    display:flex;
+    justify-content: center;
+}
+
 /* Elementos fundo */
 
 .elementoFundo1{
     width:60vw;
-    opacity:15%;
+    opacity:20%;
     position: absolute;
     top:75vw;
     right:55vw;
@@ -405,7 +505,7 @@ nav a{
     height:55vw;
     object-fit: cover;
     object-position:left;
-    opacity:10%;
+    opacity:15%;
     position: absolute;
     top:60vw;
     right:0;
@@ -417,9 +517,9 @@ nav a{
     height:55vw;
     object-fit: cover;
     object-position:right;
-    opacity:15%;
+    opacity:20%;
     position: absolute;
-    top:130vw;
+    top:125vw;
     right:0;
     z-index:1;
 }
@@ -429,9 +529,21 @@ nav a{
     height:55vw;
     object-fit: cover;
     object-position:left;
-    opacity:10%;
+    opacity:15%;
     position: absolute;
     top:145vw;
     left:0;
+    z-index:1;
+}
+.elementoFundo5{
+    rotate:180deg;
+    width:40vw;
+    height:55vw;
+    object-fit: cover;
+    object-position:right;
+    opacity:15%;
+    position: absolute;
+    top:185vw;
+    right:0;
     z-index:1;
 }
