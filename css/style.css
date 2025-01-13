@@ -152,9 +152,6 @@ nav a{
 }
 
 .banner-container button{
-    font-size:1.1vw;
-    font-family: arial;
-    color:#fff;
     padding:0.7vw 2vw;
     border-radius: 0.8vw;
     border:none;
@@ -163,6 +160,18 @@ nav a{
     width:20vw;
     margin-left:auto;
     margin-right:auto;
+    transition:0.5s;
+}
+.banner-container button:hover{
+    scale:1.1;
+}
+
+.banner-container button a{
+    font-size:1.1vw;
+    font-family: arial;
+    color:#fff;
+    font-weight:300;
+    text-decoration: none;
 }
 
 .banner-container i{
