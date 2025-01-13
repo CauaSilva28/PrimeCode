@@ -99,10 +99,6 @@ nav a{
     text-decoration: none;
 }
 
-.sectionSelected{
-    text-decoration: underline;
-}
-
 #toggletheme{
     font-size:1vw;
     cursor:pointer;
@@ -151,27 +147,26 @@ nav a{
     font-family:arial black;
 }
 
+.banner-container a{
+    width:20vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .banner-container button{
+    font-size:1.1vw;
+    font-family: arial;
+    color:#fff;
     padding:0.7vw 2vw;
     border-radius: 0.8vw;
     border:none;
     background-image: linear-gradient(170deg, #BE45FF, #5d008f);
     margin-top: 2vw;
-    width:20vw;
-    margin-left:auto;
-    margin-right:auto;
+    width:100%;
     transition:0.5s;
 }
 .banner-container button:hover{
     scale:1.1;
-}
-
-.banner-container button a{
-    font-size:1.1vw;
-    font-family: arial;
-    color:#fff;
-    font-weight:300;
-    text-decoration: none;
 }
 
 .banner-container i{
