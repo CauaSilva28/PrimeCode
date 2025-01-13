@@ -17,15 +17,15 @@
 
 <body>
     <header>
-        <img src="img/logo2.png" class="logo" />
+        <img class="logo" id="header-logo" src="img/logo2.png" class="logo" />
 
         <nav>
-            <a class="nav-text SectionSelected" href="#home">Home</a>
+            <a class="nav-text sectionSelected" href="#home">Home</a>
             <a class="nav-text" href="#sobre">Sobre Nós</a>
             <a class="nav-text" href="#servicos">Serviços</a>
             <a class="nav-text" href="#projetos">Projetos</a>
             <a class="nav-text" href="#contato">Contato</a>
-            <i id="toggleTheme" class="bi bi-brightness-high-fill"></i>
+            <i id="toggletheme" class="bi bi-brightness-high-fill"></i>
         </nav>
     </header>
 
@@ -38,7 +38,9 @@
             <div class="banner-container" data-aos="zoom-in" data-aos-duration="1000">
                 <h1>Excelência que <br><span>transforma</span><br> ideias em soluções</h1>
 
-                <button>Veja nossos serviços</button>
+                <a href="#servicos"><button>Veja nossos serviços</button></a>
+
+                <i class="bi bi-chevron-down"></i>
             </div>
         </div>
     </section>
@@ -46,10 +48,13 @@
     <section id="sobre">
         <div class="sobre-container1">
             <img src="img/iconImg.png" class="sobre-img" data-aos="fade-up" data-aos-duration="1000" />
-            <p class="sobre-text" data-aos="fade-up" data-aos-duration="1000">Somos a PrimeCode, uma empresa comprometida em alcançar a excelência e manter-se no
-                topo do mercado. Enfrentamos cada desafio com determinação e criatividade, sempre priorizando a entrega
-                de soluções tecnológicas inovadoras. Nosso objetivo é transformar ideias em realidade, oferecendo aos
-                nossos clientes serviços que superem expectativas e impulsionem seus negócios rumo ao sucesso.</p>
+            <div class="sobre-text" data-aos="fade-up" data-aos-duration="1000">
+                <h2>Empresa tecnológica com mais de 2 anos na ativa<b>!</b></h2>
+                <p>Somos a <b>PrimeCode</b>, uma empresa comprometida em alcançar a excelência e manter-se no
+                    topo do mercado. Enfrentamos cada desafio com determinação e criatividade, sempre priorizando a entrega
+                    de soluções tecnológicas inovadoras. Nosso objetivo é transformar ideias em realidade, oferecendo aos
+                    nossos clientes serviços que superem expectativas e impulsionem seus negócios rumo ao sucesso.</p>
+            </div>
         </div>
 
         <div class="sobre-container2">
@@ -79,10 +84,10 @@
             <div class="joint-bar" data-aos="fade-right" data-aos-duration="1000">
                 <div class="bar">
                     <span class="bar-text">Sites Web</span>
-                    <i class="bi bi-chevron-up bar-seta"></i>
+                    <i class="bi bi-chevron-down bar-seta"></i>
                 </div>
-                <div class="bar-open open">
-                    <span class="bar-text">Desenvolvemos sites modernos, responsivos e personalizados para destacar sua presença online. Nossa equipe garante um design atraente, desempenho rápido e integração com as ferramentas mais avançadas do mercado.</span>
+                <div class="bar-open close">
+                    <span class="bar-text">Os <b>sites web</b> são plataformas online que representam sua marca ou negócio na internet. Eles podem ser usados para divulgar informações, vender produtos, oferecer serviços ou engajar seu público. Desenvolvemos sites responsivos e personalizados que se adaptam a diferentes dispositivos, garantindo uma experiência de navegação perfeita e profissional.<br><br><a href="#contato">Faça seu pedido</a></span>
                 </div>
             </div>
 
@@ -92,7 +97,7 @@
                     <i class="bi bi-chevron-down bar-seta"></i>
                 </div>
                 <div class="bar-open close">
-                    <span class="bar-text">Criamos aplicativos funcionais e intuitivos para levar sua marca diretamente às mãos de seus clientes. Nossas soluções são focadas em usabilidade, design impecável e funcionalidades que agregam valor ao seu negócio.</span>
+                    <span class="bar-text"><b>Aplicativos mobile</b> são programas desenvolvidos para dispositivos móveis. Eles oferecem funcionalidades específicas para facilitar a vida dos usuários, conectar marcas ao público e melhorar a eficiência de processos. Criamos aplicativos com interfaces intuitivas e design moderno, prontos para atender às necessidades do mercado.<br><br><a href="#contato">Faça seu pedido</a></span>
                 </div>
             </div>
 
@@ -102,7 +107,7 @@
                     <i class="bi bi-chevron-down bar-seta"></i>
                 </div>
                 <div class="bar-open close">
-                    <span class="bar-text">Desenhamos logotipos únicos que refletem a essência e os valores da sua empresa. Cada detalhe é pensado para criar uma identidade visual forte e memorável.</span>
+                    <span class="bar-text">O <b>logotipo</b> é a representação visual da identidade de uma marca. Ele é o símbolo ou design gráfico que comunica os valores, a personalidade e a essência do seu negócio de forma imediata. Nosso trabalho é criar logotipos únicos e marcantes que ajudem sua empresa a se destacar no mercado.<br><br><a href="#contato">Faça seu pedido</a></span>
                 </div>
             </div>
 
@@ -112,7 +117,7 @@
                     <i class="bi bi-chevron-down bar-seta"></i>
                 </div>
                 <div class="bar-open close">
-                    <span class="bar-text">Oferecemos sistemas sob medida para otimizar processos e aumentar a eficiência do seu negócio. Trabalhamos com tecnologias de ponta para garantir soluções robustas e confiáveis.</span>
+                    <span class="bar-text"><b>Sistemas</b> são ferramentas de software desenvolvidas para gerenciar, organizar e automatizar processos internos ou externos de uma empresa. Eles podem ser utilizados para controle de estoque, gestão financeira, atendimento ao cliente e muito mais. Desenvolvemos sistemas sob medida, com foco em eficiência e desempenho.<br><br><a href="#contato">Faça seu pedido</a></span>
                 </div>
             </div>
 
@@ -122,7 +127,7 @@
                     <i class="bi bi-chevron-down bar-seta"></i>
                 </div>
                 <div class="bar-open close">
-                    <span class="bar-text">Transformamos suas ideias em protótipos funcionais, prontos para testes e melhorias. Nosso processo colaborativo garante que o resultado final atenda às expectativas e necessidades do projeto.</span>
+                    <span class="bar-text">O <b>design de protótipos</b> é o processo de criação de modelos funcionais que simulam como um produto final irá funcionar ou parecer. Ele é essencial para testar ideias, identificar melhorias e visualizar o resultado antes da produção. Criamos protótipos interativos para validar conceitos e garantir o sucesso de seus projetos.<br><br><a href="#contato">Faça seu pedido</a></span>
                 </div>
             </div>
 
@@ -132,7 +137,7 @@
                     <i class="bi bi-chevron-down bar-seta"></i>
                 </div>
                 <div class="bar-open close">
-                    <span class="bar-text">Desenvolvemos jogos envolventes e criativos para diferentes plataformas e públicos. Com foco em inovação e diversão, entregamos experiências que cativam e surpreendem os jogadores.</span>
+                    <span class="bar-text">Os <b>jogos</b> são experiências interativas desenvolvidas para entretenimento, aprendizado ou engajamento. Eles podem ser criados para diferentes plataformas, como consoles, computadores e dispositivos móveis. Nossa equipe se especializa em desenvolver jogos criativos e envolventes, com gráficos de qualidade e mecânicas inovadoras.<br><br><a href="#contato">Faça seu pedido</a></span>
                 </div>
             </div>
         </div>
@@ -142,6 +147,10 @@
         <h2 class="title">Nossos principais projetos</h2>
 
         <div id="carousel-projects" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-projects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-projects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="projetos-row">
@@ -151,6 +160,7 @@
                                 <h3>Spider Man</h3>
                                 <p>Site desenvolvido para a empresa taltal, com o intuito de demonstrar seu trabalho e
                                     progresso dentro do mercado tecnológico</p>
+                                <button>Visite Spider Man</button>
                             </div>
                         </div>
 
@@ -160,6 +170,7 @@
                                 <h3>Red Dead Redemption</h3>
                                 <p>Site desenvolvido para a empresa taltal, com o intuito de demonstrar seu trabalho e
                                     progresso dentro do mercado tecnológico</p>
+                                <button>Visite Red Dead Redemption</button>
                             </div>
                         </div>
                     </div>
@@ -172,6 +183,7 @@
                                 <h3>GUB games</h3>
                                 <p>Site desenvolvido para a empresa taltal, com o intuito de demonstrar seu trabalho e
                                     progresso dentro do mercado tecnológico</p>
+                                <button>Visite GUB games</button>
                             </div>
                         </div>
 
@@ -181,6 +193,7 @@
                                 <h3>Adventure</h3>
                                 <p>Site desenvolvido para a empresa taltal, com o intuito de demonstrar seu trabalho e
                                     progresso dentro do mercado tecnológico</p>
+                                <button>Visite Adventure</button>
                             </div>
                         </div>
                     </div>
@@ -199,6 +212,8 @@
 
     <section id="contato">
         <h2 class="title">Fale conosco</h2>
+
+        <p>Preencha o formulário abaixo com o que deseja e nossa equipe entrará em contato para entender suas necessidades e oferecer a melhor solução personalizada para o seu projeto.</p>
 
         <div class="contato-container">
             <img data-aos="fade-right" data-aos-duration="1000" src="img/telefone.png" class="contato-img" />
@@ -222,7 +237,7 @@
     </section>
 
     <footer class="d-flex align-items-center justify-content-between">
-        <img src="img/logo2.png" />
+        <img class="logo" src="img/logo2.png" />
 
         <div class="d-flex flex-column">
             <h3>Email:</h3>
@@ -245,6 +260,7 @@
     <img src="img/elementosFundo.png" class="elementoFundo3" />
     <img src="img/elementosFundo.png" class="elementoFundo4" />
     <img src="img/elementosFundo.png" class="elementoFundo5" />
+    <img src="img/elementosFundo.png" class="elementoFundo6" />
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- biblioteca de animação com scroll script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
