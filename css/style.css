@@ -99,7 +99,14 @@ nav a{
     text-decoration: none;
 }
 
-#toggletheme{
+#controlNavMobile{
+    display:none;
+}
+#navbarMobile{
+    display:none;
+}
+
+#toggletheme, #togglethemeMobile{
     font-size:1vw;
     cursor:pointer;
 }
@@ -560,7 +567,7 @@ footer{
     z-index:2;
 }
 
-footer img{
+footer .logo{
     width:8vw;
 }
 

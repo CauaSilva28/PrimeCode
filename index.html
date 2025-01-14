@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icon.png" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylemobile.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- biblioteca de animação com scroll style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -27,7 +28,19 @@
             <a class="nav-text" href="#contato">Contato</a>
             <i id="toggletheme" class="bi bi-brightness-high-fill"></i>
         </nav>
+
+        <i id="controlNavMobile" class="bi bi-list"></i>
     </header>
+
+    <div id="navbarMobile">
+        <img class="logo" id="header-logo" src="img/logo2.png" class="logo" />
+        <a class="nav-text" href="#home">Home</a>
+        <a class="nav-text" href="#sobre">Sobre Nós</a>
+        <a class="nav-text" href="#servicos">Serviços</a>
+        <a class="nav-text" href="#projetos">Projetos</a>
+        <a class="nav-text" href="#contato">Contato</a>
+        <i id="togglethemeMobile" class="bi bi-brightness-high-fill"></i>
+    </div>
 
     <section id="home">
         <div class="banner">
@@ -167,10 +180,10 @@
                         <div class="projetos-container">
                             <img src="img/projetos/imgProjeto2.jpg" class="projetos-img" />
                             <div class="projetos-description">
-                                <h3>Red Dead Redemption</h3>
+                                <h3>Red Dead</h3>
                                 <p>Site desenvolvido para a empresa taltal, com o intuito de demonstrar seu trabalho e
                                     progresso dentro do mercado tecnológico</p>
-                                <button>Visite Red Dead Redemption</button>
+                                <button>Visite Red Dead</button>
                             </div>
                         </div>
                     </div>
@@ -218,7 +231,7 @@
         <div class="contato-container">
             <img data-aos="fade-right" data-aos-duration="1000" src="img/telefone.png" class="contato-img" />
 
-            <form data-aos="fade-left" data-aos-duration="1000">
+            <form data-aos="zoom-in" data-aos-duration="1000">
                 <div class="form-group">
                     <label for="nome">Nome</label>
                     <input type="text" class="form-control" id="nome" placeholder="Digite seu nome...">

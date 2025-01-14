@@ -30,6 +30,7 @@ headerControl();
 // Tema dark ou light
 
 const toggleTheme = document.querySelector('#toggletheme');
+const toggleThemeMobile = document.querySelector('#togglethemeMobile');
 
 //Alternar modo light e dark
 function changeTheme(){
@@ -45,6 +46,8 @@ function changeTheme(){
         }
         toggleTheme.classList.add('bi-brightness-high-fill');
         toggleTheme.classList.remove('bi-moon-fill');
+        toggleThemeMobile.classList.add('bi-brightness-high-fill');
+        toggleThemeMobile.classList.remove('bi-moon-fill');
     } 
     else {
         sessionStorage.setItem('tema', 'escuro');
@@ -54,10 +57,13 @@ function changeTheme(){
         }
         toggleTheme.classList.add('bi-moon-fill');
         toggleTheme.classList.remove('bi-brightness-high-fill');
+        toggleThemeMobile.classList.add('bi-moon-fill');
+        toggleThemeMobile.classList.remove('bi-brightness-high-fill');
     }
 }
 
 toggleTheme.addEventListener('click', changeTheme); //Adicionando evento de click
+toggleThemeMobile.addEventListener('click', changeTheme); //Adicionando evento de click
 
 // Barras com conteúdo
 
@@ -84,3 +90,33 @@ function barras(){
 }
 
 barras();
+
+// Nav Mobile
+
+function NavMobile(){
+    let controlNavMobile = document.getElementById('controlNavMobile');
+    let navBarMobile = document.getElementById('navbarMobile');
+
+    controlNavMobile.addEventListener('click', function(){
+        if(controlNavMobile.classList.contains('bi-list')){
+            navBarMobile.style.display = 'flex';
+            controlNavMobile.classList.add('bi-x-lg');
+            controlNavMobile.classList.remove('bi-list');
+        }
+        else{
+            navBarMobile.style.display = 'none';
+            controlNavMobile.classList.remove('bi-x-lg');
+            controlNavMobile.classList.add('bi-list');
+        }
+    });
+
+    window.addEventListener('resize', function() { // Adiciona eventos de acordo com o tamanho da tela
+        if (window.innerWidth > 800) { // Ajusta os elementos quando a tela for MAIOR que 900px
+            navBarMobile.style.display = 'none';
+            controlNavMobile.classList.remove('bi-x-lg');
+            controlNavMobile.classList.add('bi-list');
+        }
+    });
+}
+
+NavMobile();
