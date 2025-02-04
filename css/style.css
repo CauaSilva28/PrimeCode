@@ -542,6 +542,10 @@ nav a{
     border-right: none;
     border-radius:0;
 }
+#contato .contato-container form .form-group textarea{
+    max-height:8vw;
+    min-height:2.5vw;
+}
 
 #contato .contato-container form button{
     width:100%;
